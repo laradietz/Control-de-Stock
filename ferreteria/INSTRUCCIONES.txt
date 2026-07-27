@@ -1,0 +1,91 @@
+======================================================
+  SISTEMA DE CONTROL DE STOCK - FERRETERÍA GIAN
+  Instrucciones de instalación para Windows
+======================================================
+
+PASO 1 - Descomprimir el archivo
+----------------------------------
+1. Clic derecho sobre el .zip
+2. Elegí "Extraer todo..." y aceptá
+
+PASO 2 - Instalar Python (solo la primera vez)
+------------------------------------------------
+1. Entrá a: https://www.python.org/downloads/
+2. Hacé clic en "Download Python"
+3. IMPORTANTE: tildá "Add Python to PATH" antes de instalar
+4. Hacé clic en "Install Now"
+
+PASO 3 - Instalar dependencias (solo la primera vez)
+------------------------------------------------------
+1. Abrí la carpeta del programa
+2. Hacé clic en la barra de direcciones y escribí "cmd", Enter
+3. Escribí: pip install openpyxl reportlab matplotlib pillow
+4. Presioná Enter y esperá que termine
+
+PASO 4 - Ejecutar el programa
+-------------------------------
+  Doble clic en el archivo: INICIAR.bat
+  O desde cmd: python main.py
+
+======================================================
+  USUARIO POR DEFECTO
+======================================================
+  Usuario:    dueño
+  Contraseña: 1234
+
+======================================================
+  CÓMO REGISTRAR UNA VENTA (IMPORTANTE)
+======================================================
+  1. Menú lateral -> Nueva Venta
+  2. Buscá el producto y hacé doble clic (o "Agregar al carrito")
+  3. Repetí para todos los productos
+  4. *** MUY IMPORTANTE ***: para que la venta quede guardada
+     tenés que hacer clic en "Confirmar venta" (verde) o en
+     "Confirmar e imprimir boleta" (azul).
+  5. Si hacés clic en "Cancelar venta" o cerrás la ventana,
+     el sistema te va a avisar que la venta NO se va a guardar.
+
+======================================================
+  FUNCIONALIDADES DEL SISTEMA
+======================================================
+  VENTAS
+  🛒 Nueva Venta              -> Carrito + boleta en PDF
+  📋 Historial de Ventas      -> Ver y anular ventas
+  💰 Caja del Día             -> Resumen y cierre de caja
+
+  INVENTARIO
+  ➕ Nuevo Producto            -> Alta de productos
+  📦 Movimientos Stock         -> Entradas y salidas manuales
+  🏷 Actualizar Precios       -> Remarcación automática por proveedor (%)
+
+  MAESTROS
+  👥 Clientes                 -> Gestión y historial de compras
+  🚚 Proveedores              -> CRUD de proveedores
+  🗂 Categorías               -> Gestión de categorías
+
+  COMPRAS (NUEVO)
+  📝 Pedidos a Proveedores    -> Armar pedidos manuales o automáticos
+                                  por stock bajo, y marcarlos como
+                                  recibidos (suma el stock solo)
+  🧾 Comprobantes de Compra   -> Subir facturas/remitos en PDF o foto
+                                  como respaldo de cada compra
+
+  REPORTES
+  📊 Estadísticas             -> Gráficos de ventas
+  📈 Reporte de Stock         -> Alertas de stock bajo
+  📥 Exportar Excel/PDF       -> Reportes exportables
+
+  SISTEMA
+  🔐 Usuarios                 -> Alta y gestión de usuarios
+  💾 Backup                   -> Respaldo de datos
+
+======================================================
+  IMPORTANTE
+======================================================
+  - Los datos se guardan en: db/ferreteria.db
+  - Los backups automáticos en: db/backups/
+  - Las boletas y reportes en: exports/
+  - Los comprobantes subidos en: exports/comprobantes/
+  - NO borres ninguna carpeta del programa
+
+======================================================
