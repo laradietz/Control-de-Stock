@@ -1,0 +1,17 @@
+# Database (autogenerada en la primera ejecución)
+ferreteria/db/*.db
+ferreteria/db/backups/*.zip
+
+# Exports generados
+ferreteria/exports/*.pdf
+ferreteria/exports/*.xlsx
+ferreteria/exports/comprobantes/*
+
+# Python
+__pycache__/
+*.pyc
+
+# Empty dirs stay tracked
+!ferreteria/db/backups/.gitkeep
+!ferreteria/exports/.gitkeep
+!ferreteria/exports/comprobantes/.gitkeep
